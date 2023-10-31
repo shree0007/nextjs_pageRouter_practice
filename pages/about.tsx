@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const about = () => {
     return (
@@ -11,7 +12,7 @@ const about = () => {
                 <h1 className="text-xl pb-8">About page</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi tempora voluptatum cumque suscipit ipsum pariatur optio, aspernatur ad impedit sequi molestiae nobis veritatis! Laborum sunt officiis inventore molestias qui!</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi tempora voluptatum cumque suscipit ipsum pariatur optio, aspernatur ad impedit sequi molestiae nobis veritatis! Laborum sunt officiis inventore molestias qui!</p>
-                <button className="bg-green-400"><a href="/">Homepage</a></button>
+                <Link href='/'><button className="btn btn-success">Homepage</button></Link>
             </div>
         </>
     );

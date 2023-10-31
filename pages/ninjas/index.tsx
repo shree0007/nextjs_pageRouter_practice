@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 interface Ninjas {
     id: string;
@@ -30,17 +31,27 @@ const Ninjas = ({ ninjas }: NinjasProps) => {
                 <title>Ninja List | ninjas</title>
                 <meta name="keywords" content="ninjas" />
             </Head>
-
-            <div className={`min-h-screen p-24`}>
-                <h1 className="text-xl pb-8">Ninjas List</h1>
+            <div className={`min-h-screen p-24 grid grid-cols-4 gap-4`}>
                 {ninjas.map((ninja) => {
-                    return <div key={ninja.id}>
-                        <li>{ninja.name}</li>
+
+                    return <div key={ninja.id} className="card w-96 bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">{ninja.name}</h2>
+                            <p>{ninja.email}</p>
+                            <div className="card-actions justify-end">
+                                <Link href={'/ninjas/' + ninja.id}><button className="btn btn-success">See more</button></Link>
+                            </div>
+                        </div>
                     </div>
+
                 })}
+
+
+
             </div>
         </>
     );
 };
 
 export default Ninjas;
+

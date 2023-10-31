@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const contact = () => {
     return (
@@ -12,7 +13,7 @@ const contact = () => {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi tempora voluptatum cumque suscipit ipsum pariatur optio, aspernatur ad impedit sequi molestiae nobis veritatis! Laborum sunt officiis inventore molestias qui!</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi tempora voluptatum cumque suscipit ipsum pariatur optio, aspernatur ad impedit sequi molestiae nobis veritatis! Laborum sunt officiis inventore molestias qui!</p>
                 <p>shree.bhusal07@gmail.com</p>
-                <button className="bg-green-400"><a href="/">Homepage</a></button>
+                <Link href='/'><button className="btn btn-success">Back to Homepage</button></Link>
             </div>
         </>
     );

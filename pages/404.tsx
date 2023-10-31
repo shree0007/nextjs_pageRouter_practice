@@ -10,7 +10,7 @@ const NotFound = () => {
             // router.back(); //goes 1 step back 
             router.push('/') //goes to homepage after 3s.
         }, 3000)
-    }, [])
+    },)
     return (
         <div data-theme="dark" className={`min-h-screen flex-col items-center p-44`}>
             <h1>Ooooops</h1>
