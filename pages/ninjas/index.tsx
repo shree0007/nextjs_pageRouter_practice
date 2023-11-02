@@ -15,7 +15,7 @@ interface NinjasProps {
 export const getStaticProps = async () => {                               //this functions run at build time not in the browser
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const data: Ninjas[] = await res.json()
-    console.log(data);
+    // console.log(data);
 
     return {
         props: { ninjas: data }
@@ -34,7 +34,7 @@ const Ninjas = ({ ninjas }: NinjasProps) => {
             <div className={`min-h-screen p-24 grid grid-cols-4 gap-4`}>
                 {ninjas.map((ninja) => {
 
-                    return <div key={ninja.id} className="card w-96 bg-base-100 shadow-xl">
+                    return <div key={ninja.id} className="card w-90 bg-blue-200 shadow-xl">
                         <div className="card-body">
                             <h2 className="card-title">{ninja.name}</h2>
                             <p>{ninja.email}</p>
