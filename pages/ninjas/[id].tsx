@@ -62,8 +62,8 @@ const DetailsPage = ({ ninja }: NinjaProps) => {
                 <div className="card-body">
                     <h2 className="card-title">{ninja.name}</h2>
                     <p>Username: {ninja.username}</p>
-                    <p>Email{ninja.email}</p>
-                    <p>Address:{ninja.address.street},{ninja.address.city}</p>
+                    <p>Email: {ninja.email}</p>
+                    <p>Address: {ninja.address.street},{ninja.address.city}</p>
                 </div>
             </div>
             <Link href='/ninjas'><button className='btn btn-success'>Back to Ninjas</button></Link>
