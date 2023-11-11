@@ -1,5 +1,6 @@
-# NEXTJS NINJS PROJECT
-
+# NEXTJS NINJA PROJECT
+- Simple nextjs project for practice
+![Alt text](ninja.png)
 
 ## Notes
 - see custom 404.tsx file and see the use of useEffect and useRouter for redirecting
